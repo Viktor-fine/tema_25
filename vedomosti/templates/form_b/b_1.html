@@ -1,0 +1,136 @@
+{% extends "../base.html" %}
+
+
+{% block title %}Форма Б.1{% endblock %}
+
+{% block title_form %}
+    <button type="button" class="primer1_b1" name="primer">Пример</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+    <button type="button" class="save" name="save">Сохранить Форму</button><br><br>
+    <p class="name_vedomost"><b>Форма Б.1</b> - Ведомость записи показателей при снятии нагрузочной характеристики гидросистемы</p>
+{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor"><i><b>Марка машины:</b></i></label></td>
+        <td><input type="text" id="marka" class="z_1" name="marka" size="50"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor"><i><b>Место испытаний:</b></i></label></td>
+        <td><input type="text" id="mesto" class="z_2" name="mesto" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Дата испытаний:</b></i></label></td>
+        <td><input type="text" id="data" class="z_3" name="data" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Средства измерений:</b></i></label></td>
+        <td><input type="text" id="sort" class="z_4" name="data" size="50"></td>
+    </tr>
+         
+</table>
+{% endblock %}
+
+
+{% block tabl %}
+<table class="main-tabl">
+   <tr>
+        <th class="tabl-th" rowspan="4">Наименование<br>показателя</th>
+        <th class="tabl-th" colspan="12">Значения показателя</th>
+   </tr>
+   <tr>
+        <th class="tabl-th" colspan="4">G<sub>1</sub></th>
+        <th class="tabl-th" colspan="4">G<sub>2</sub></th>
+        <th class="tabl-th" colspan="4">G<sub>n</sub></th>
+   </tr>
+   <tr>
+        <th class="tabl-th" colspan="4">Повторность</th>
+        <th class="tabl-th" colspan="4">Повторность</th>
+        <th class="tabl-th" colspan="4">Повторность</th>
+   </tr>
+   <tr>
+        <th class="tabl-th">1</th>
+        <th class="tabl-th">2</th>
+        <th class="tabl-th">3</th>
+        <th class="tabl-th">Средне-<br>арифме-<br>тическое</th>
+        <th class="tabl-th">1</th>
+        <th class="tabl-th">2</th>
+        <th class="tabl-th">3</th>
+        <th class="tabl-th">Средне-<br>арифме-<br>тическое</th>
+        <th class="tabl-th">1</th>
+        <th class="tabl-th">2</th>
+        <th class="tabl-th">3</th>
+        <th class="tabl-th">Средне-<br>арифме-<br>тическое</th>
+   </tr>
+   <tr>
+        <th class="tabl-th">Давление<br>масла в гидро-<br>системе, МПА</th>
+        <td class="tabl-td"><input type="number" size="1" id="a_1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+   </tr>
+    <tr>
+        <th class="tabl-th">Температура<br>масла в гидро-<br>системе, &deg;C</th>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+   </tr>
+    <tr>
+        <th class="tabl-th">Время подъ-<br>ёма груза, с</th>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+   </tr>
+    <tr>
+        <th class="tabl-th">Высота подъ-<br>ёма груза, м</th>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+        <td class="tabl-td"><input type="number" size="1"></td>
+   </tr>
+</table>
+<br>
+<div class="butt">
+    <button type="button" class="raschet_b1">Расчёт</button>
+    <button type="button" class="bd_b1">Сохранить в БД</button>
+    <button type="button" class="print1_b1">Печать</button>
+</div>
+<!-- {% load static %} -->
+<script src="{% static 'js\b_1.js' %}"></script>
+<script src="../../static/js/b_1.js"></script>
+{% endblock %}

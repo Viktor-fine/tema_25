@@ -1,0 +1,218 @@
+body{
+    padding: 0;
+    margin: o;
+}
+.main-container{
+    margin: 0 auto;
+    max-width: 1120px;
+    border: 2px solid #3d9970;
+}
+
+.header-container{
+    background-color: #3d9970;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+.header-title{
+    text-align: center;
+    color: rgb(238, 234, 234);
+}
+.header-prog-name{
+    font-size: 1.1rem;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    border: 3px solid bisque;
+    padding: 7px;
+    border-radius: 7px;
+    /* background-color: #a9b65f; */
+}
+.lin-orange{
+    background-color: #ff851b;
+    height: 23px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    
+    /* gap: 5px; */
+    align-items: left;
+   
+    /* margin-bottom: 10px; */
+    background-color: rgb(166, 189, 189);
+    height: 140px;
+}
+ul{
+    list-style-type: none;
+    /* background-color: rgb(239, 206, 115); */
+    display: flex;
+    text-align: left;
+    gap: 5px;
+    /* border: 1px solid black; */
+    padding: 5px
+}
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+}
+ul li:hover{
+    background-color: #ffc880;
+}
+
+/* Навигация форм А-Б */
+.name-nav{
+    padding-left: 5px;
+    font-size: 1.1rem;
+    padding-right: 10px;
+}
+
+/* ----- стили для текстовых полей ----- */
+.name_vedomost{
+    text-transform: uppercase;
+    text-align: center;
+}
+input{
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+
+/* ----- content table ----- */
+/* .table_1, td{
+    padding: 5px;
+    font-size: 1.1rem;
+} */
+.tabl{
+   margin-top: 10px;
+   /* margin: 0 auto; */
+}
+.tabl_1{
+    padding-left: 30px;
+}
+.main-tabl{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+/* -------------- Стили для шапки таблицы и ячеек ---------------------- */
+.tabl-th, .tabl-td{
+    border: 1px solid rgb(58, 60, 58);
+    text-align: center;
+    padding: 5px; 
+    white-space: nowrap;
+}
+/* --- ДЛЯ ТАБЛИЦЫ Б.10 --- */
+.tabl-th_b10{
+    /* border: 1px solid rgb(58, 60, 58); */
+    text-align: left;
+} 
+.tabl-th_b10_right{
+    text-align: right;
+    padding-right: 7px;
+}
+.podp{
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.text-bot{
+    font-size: 0.75rem;
+    margin-top: 1px;
+    text-align: center;
+}
+.fot{
+    display: flex;
+    justify-content: space-between;
+    color:azure;
+    height: 90px;
+    background-color: #3d9970;
+    margin-top:5px;
+    padding: 0 10px 0 10px;
+    align-items: center;
+}
+.text-footer{
+    text-align: center;
+}
+
+
+/* .tabl_a1, .tabl_a1 th, .tabl_a1 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: right;
+    margin: 0 auto;
+    padding: 7px;
+    white-space: nowrap;
+}  */
+/* .form_a_plus{
+    text-align: center;
+    color:#3d9970;
+    
+    
+} */
+
+/* Стили для формы А.1 */
+.tabl_a1 th{
+    text-align: center;
+} 
+.tabl_a1 tr:nth-child(even) {
+    background: #C9E3FE;
+}
+.tabl_a1 tr:nth-child(odd) {
+    background: #ffd6a0;
+}
+
+.fon{
+    background:rgb(233, 231, 231);
+    margin-top: 5px;
+}
+/* ----- Кнопки (расчёт, печать, стереть) ----- */
+
+.butt {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* .tabl_b8, .tabl_b8 th, .tabl_b8 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}  */
+/* .tabl_b8{
+    width: 70%;
+    margin: 0 auto;
+} */
+
+.primer1_b1, .reset, .save, .raschet_b1, .bd_b1, .print1_b1{
+    background-color:  #3d9970;;
+    font-size: 16px;
+    /* border: 1px solid #ff8002; */
+    border-radius: 7px;
+    padding: 5px;
+    color:rgb(243, 242, 241);
+    font-weight: bold;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+    margin-left: 15px;
+}
+.form_b{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* border: 1px solid black; */
+    
+}
+.form_a{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.markers li{
+    background-color: #d4c3aa;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
