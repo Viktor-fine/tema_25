@@ -1,0 +1,120 @@
+{% extends "../base.html" %}
+
+
+{% block title %}Форма Б.2{% endblock %}
+
+{% block title_form %}
+    <button type="button" class="primer1_b1" name="primer">Пример</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+    <!-- <button type="button" class="save" name="save">Сохранить Форму</button><br><br> -->
+    <p class="name_vedomost"><b>Форма Б.2</b> - Ведомость определения габаритов хранилища, железнодорожного вагона, силосной ямы и высоты расположения технологического материала</p>
+{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor"><i><b>Марка машины:</b></i></label></td>
+        <td><input type="text" id="marka" class="z_1" name="marka" size="50"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor"><i><b>Место испытаний:</b></i></label></td>
+        <td><input type="text" id="mesto" class="z_2" name="mesto" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Дата испытаний:</b></i></label></td>
+        <td><input type="text" id="data" class="z_3" name="data" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Наименование материала:</b></i></label></td>
+        <td><input type="text" id="data" class="z_3" name="data" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Средства измерений:</b></i></label></td>
+        <td><input type="text" id="sort" class="z_4" name="data" size="50"></td>
+    </tr>
+         
+</table>
+{% endblock %}
+
+{% block tabl %}
+<table class="main-tabl">
+    <tr>
+        <th class="tabl-th" rowspan="2">Измерение</th>
+        <th class="tabl-th" rowspan="2">Тип<br>хранилища</th>
+        <th class="tabl-th" colspan="3">Габариты хранилища<br>(внутренние), см</th>
+        <th class="tabl-th" rowspan="2">Высота,(толщи-<br>на) расположения<br>технологического<br>материала в<br>хранилище, м</th>
+    </tr>
+    <tr>
+        <th class="tabl-th">Длина</th>
+        <th class="tabl-th">Ширина</th>
+        <th class="tabl-th">Высота</th>
+    </tr>
+    <tr>
+        <th class="tabl-th">1</th>
+        <td class="tabl-td"><input type="text" size="5"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+    </tr>
+    <tr>
+        <th class="tabl-th">2</th>
+        <td class="tabl-td"><input type="text" size="5"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+    </tr>
+    <tr>
+        <th class="tabl-th">3</th>
+        <td class="tabl-td"><input type="text" size="5"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+    </tr>
+    <tr>
+        <th class="tabl-th">4</th>
+        <td class="tabl-td"><input type="text" size="5"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+    </tr>
+    <tr>
+        <th class="tabl-th">5</th>
+        <td class="tabl-td"><input type="text" size="5"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+    </tr>
+    <tr>
+        <th class="tabl-th" >Сумма</th>
+        <td class="tabl-td" rowspan="2"></td>
+        <td class="tabl-td"><input type="number" size="4"></td>
+        <td class="tabl-td"><input type="number" size="4"></td>
+        <td class="tabl-td"><input type="number" size="4"></td>
+        <td class="tabl-td"><input type="number" size="4"></td>
+    </tr>
+    <tr>
+        <th class="tabl-th" >Средне-<br>арифмитиче-<br>ское значение</th>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+        <td class="tabl-td"><input type="number" size="3"></td>
+    </tr>
+
+
+
+</table>
+<br>
+<div class="butt">
+    <button type="button" class="raschet_b1">Расчёт</button>
+    <!-- <button type="button" class="bd_b1">Сохранить в БД</button> -->
+    <!-- <button type="button" class="print1_b1">Печать</button> -->
+</div>
+<!-- {% load static %} -->
+<!-- <script src="{% static 'js\b_1.js' %}"></script> -->
+<!-- <script src="../../static/js/b_1.js"></script> -->
+{% endblock %}
