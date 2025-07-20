@@ -35,94 +35,231 @@
 
 {% block tabl %}
 <table class="main-tabl">
-   <tr>
-        <th class="tabl-th" rowspan="4">Наименование<br>показателя</th>
-        <th class="tabl-th" colspan="12">Значения показателя</th>
-   </tr>
-   <tr>
-        <th class="tabl-th" colspan="4">G<sub>1</sub> = <input class="in" type="number"></th>
-        <th class="tabl-th" colspan="4">G<sub>2</sub> = <input class="in" type="number"></th>
-        <th class="tabl-th" colspan="4">G<sub>3</sub> = <input class="in" type="number"></th>
-   </tr>
-   <tr>
+    <tr>
+        <th class="tabl-th" rowspan="3">Масса<br>груза</th>
+        <th class="tabl-th" colspan="4">Давление масла в<br>гидросистеме, МПа</th>
+        <th class="tabl-th" colspan="4">Температура масла в<br>гидросистеме,  &deg;С</th>
+        <th class="tabl-th" colspan="4">Время подъёма<br>груза, с </th>
+        <th class="tabl-th" colspan="4">Высота подъёма<br>груза, с</th>
+    </tr>
+    <tr>
         <th class="tabl-th" colspan="4">Повторность</th>
         <th class="tabl-th" colspan="4">Повторность</th>
         <th class="tabl-th" colspan="4">Повторность</th>
-   </tr>
-   <tr>
+        <th class="tabl-th" colspan="4">Повторность</th>
+    </tr>
+    <tr>
         <th class="tabl-th">1</th>
         <th class="tabl-th">2</th>
         <th class="tabl-th">3</th>
-        <th class="tabl-th">Средне-<br>арифме-<br>тическое</th>
+        <th class="tabl-th">Сред.</th>
+    
         <th class="tabl-th">1</th>
         <th class="tabl-th">2</th>
         <th class="tabl-th">3</th>
-        <th class="tabl-th">Средне-<br>арифме-<br>тическое</th>
+        <th class="tabl-th">Сред.</th>
+    
         <th class="tabl-th">1</th>
         <th class="tabl-th">2</th>
         <th class="tabl-th">3</th>
-        <th class="tabl-th">Средне-<br>арифме-<br>тическое</th>
-   </tr>
-   <tr>
-        <th class="tabl-td">Давление<br>масла в гидро-<br>системе, МПА</th>
-        <td class="tabl-td"><input class="in" type="number" id="a_1"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-        <td class="tabl-td"><input class="in" type="number"></td>
-   </tr>
+        <th class="tabl-th">Сред.</th>
+    
+        <th class="tabl-th">1</th>
+        <th class="tabl-th">2</th>
+        <th class="tabl-th">3</th>
+        <th class="tabl-th">Сред.</th>
+    </tr>
+
     <tr>
-        <th class="tabl-th">Температура<br>масла в гидро-<br>системе, &deg;C</th>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-   </tr>
-    <tr>
-        <th class="tabl-th">Время подъ-<br>ёма груза, с</th>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-   </tr>
-    <tr>
-        <th class="tabl-th">Высота подъ-<br>ёма груза, м</th>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-        <td class="tabl-td"><input class="in" type="number" size="1"></td>
-   </tr>
+        <th class="tabl-td">G<sub>1</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>2</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>3</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>4</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>5</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>6</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>7</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>8</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>9</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
+     <tr>
+        <th class="tabl-td">G<sub>10</sub> = <input class="in" type="number"></th>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+        <td class="tabl-td"><input class="in" type="number"></td>
+    </tr>
 </table>
 <br>
 <div class="butt">
