@@ -8,17 +8,43 @@ function primer_b1(){
                         '28.05.2025',
                         'Манометр, секундомер, рулетка, масса груза 500кг, объём ковша 3м ',
                      ];
-    let op_1 = [100, NaN, 90, 4, 1, 1, 2, NaN, 1];
-    let op_2 = [100, NaN, 90, 3, 2, 2, 2, NaN, 2];
-    let op_3 = [100, NaN, 92, 2, 1, 1, 1, NaN, 2];
-    let op_4 = [100, NaN, 91, 2, 3, 1, 1, NaN, 3];
+    let op_1 = [100, 14, 16, 15, 15,
+        46, 45, 47, 46,
+        45, 46, 44, 45,
+        2.5, 2.6, 2.4, 2.5];
+    
 
 
     document.querySelector('.z_1').value = zagolovok_b1[0];
     document.querySelector('.z_2').value = zagolovok_b1[1];
     document.querySelector('.z_3').value = zagolovok_b1[2];
     document.querySelector('.z_4').value = zagolovok_b1[3];
-    }
+    document.getElementById('g1_massa').value = op_1[0];
+    document.getElementById('g1_1').value = op_1[1];
+    document.getElementById('g1_2').value = op_1[2];
+    document.getElementById('g1_3').value = op_1[3];
+    document.getElementById('g1_sred1').value = op_1[4];
+    document.getElementById('g1_4').value = op_1[5];
+    document.getElementById('g1_5').value = op_1[6];
+    document.getElementById('g1_6').value = op_1[7];
+    document.getElementById('g1_sred2').value = op_1[8];
+    document.getElementById('g1_7').value = op_1[9];
+    document.getElementById('g1_8').value = op_1[10];
+    document.getElementById('g1_9').value = op_1[11];
+    document.getElementById('g1_sred3').value = op_1[12];
+    document.getElementById('g1_10').value = op_1[13];
+    document.getElementById('g1_11').value = op_1[14];
+    document.getElementById('g1_12').value = op_1[15];
+    document.getElementById('g1_sred4').value = op_1[16];
+
+    
+    // let num1 = document.getElementById('g1_1').value;
+    // let num2 = document.getElementById('g1_2').value;
+    // let num3 = document.getElementById('g1_3').value;
+    // let sred1 = (num1+num2+num3)/3;
+    // document.getElementById('g1_sred1').value = sred1;              
+
+}
 
 document.querySelector(".reset").onclick = reset;
 
@@ -27,6 +53,10 @@ function reset(){
     document.querySelector('.z_2').value = '';
     document.querySelector('.z_3').value = '';
     document.querySelector('.z_4').value = '';
+    document.getElementById('g1_massa').value = '';
+    document.getElementById('g1_1').value = '';
+    document.getElementById('g1_2').value = '';
+    document.getElementById('g1_3').value = '';
 }
 //     // 1-й опыт
 //     document.querySelector('.a_1').value = op_1[0];
