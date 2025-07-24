@@ -19,11 +19,18 @@ function primer_b1(){
     document.querySelector('.z_2').value = zagolovok_b1[1];
     document.querySelector('.z_3').value = zagolovok_b1[2];
     document.querySelector('.z_4').value = zagolovok_b1[3];
+
     document.getElementById('g1_massa').value = op_1[0];
     document.getElementById('g1_1').value = op_1[1];
     document.getElementById('g1_2').value = op_1[2];
     document.getElementById('g1_3').value = op_1[3];
-    document.getElementById('g1_sred1').value = op_1[4];
+    let g1_1 = document.getElementById('g1_1').value;
+    let g1_2 = document.getElementById('g1_2').value;
+    let g1_3 = document.getElementById('g1_3').value;
+    let g1_sred1 = (g1_1 + g1_2 + g1_3) / 3;
+    document.getElementById('g1_sred1').value = g1_sred1;
+
+    
     document.getElementById('g1_4').value = op_1[5];
     document.getElementById('g1_5').value = op_1[6];
     document.getElementById('g1_6').value = op_1[7];
@@ -57,6 +64,9 @@ function reset(){
     document.getElementById('g1_1').value = '';
     document.getElementById('g1_2').value = '';
     document.getElementById('g1_3').value = '';
+    document.getElementById('g1_sred1').value = '';
+   
+    
 }
 //     // 1-й опыт
 //     document.querySelector('.a_1').value = op_1[0];
