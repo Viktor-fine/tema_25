@@ -110,6 +110,19 @@ input{
     width: 50px;
     margin: 0 auto;
 }
+.in_sred{
+    /* border: none; */
+    width: 50px;
+    margin: 0 auto;
+    background-color: #3d9970;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
 /* .tabl-in, input{
     width: 45px;
     border: 1px solid rgb(58, 60, 58);

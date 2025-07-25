@@ -6,14 +6,22 @@ function primer_b1(){
     let zagolovok_b1=['Ковшовый погрузчик',
                         'НЭС',
                         '28.05.2025',
-                        'Манометр, секундомер, рулетка, масса груза 500кг, объём ковша 3м ',
-                     ];
-    let op_1 = [100, 14, 16, 15, 15,
-        46, 45, 47, 46,
-        45, 46, 44, 45,
-        2.5, 2.6, 2.4, 2.5];
-    
+                        'Манометр, секундомер, рулетка, масса груза 500кг, объём ковша 3м ',];
 
+    let op_1 = [100, 14, 16, 15,
+                    46, 45, 47,
+                    45, 46, 44,
+                    2.5, 2.6, 2.4];
+
+    let op_2 = [200, 13, 14, 15,
+                    45, 47, 46,
+                    49, 49, 50,
+                    2.6, 2.7, 2.8];
+
+    let op_3 = [300, 14, 13, 15,
+                    48, 47, 46,
+                    50, 49, 51,
+                    2.8, 2.9, 2.7];
 
     document.querySelector('.z_1').value = zagolovok_b1[0];
     document.querySelector('.z_2').value = zagolovok_b1[1];
@@ -21,38 +29,121 @@ function primer_b1(){
     document.querySelector('.z_4').value = zagolovok_b1[3];
 
     document.getElementById('g1_massa').value = op_1[0];
-    document.getElementById('g1_1').value = op_1[1];
-    document.getElementById('g1_2').value = op_1[2];
-    document.getElementById('g1_3').value = op_1[3];
-    let g1_1 = document.getElementById('g1_1').value;
-    let g1_2 = document.getElementById('g1_2').value;
-    let g1_3 = document.getElementById('g1_3').value;
-    let g1_sred1 = (g1_1 + g1_2 + g1_3) / 3;
-    document.getElementById('g1_sred1').value = g1_sred1;
-
+    document.getElementById('g1_1').value = Number(op_1[1]);
+    document.getElementById('g1_2').value = Number(op_1[2]);
+    document.getElementById('g1_3').value = Number(op_1[3]);
+    document.getElementById('g1_4').value = Number(op_1[4]);
+    document.getElementById('g1_5').value = Number(op_1[5]);
+    document.getElementById('g1_6').value = Number(op_1[6]);
+    document.getElementById('g1_7').value = Number(op_1[7]);
+    document.getElementById('g1_8').value = Number(op_1[8]);
+    document.getElementById('g1_9').value = Number(op_1[9]);
+    document.getElementById('g1_10').value = Number(op_1[10]);
+    document.getElementById('g1_11').value = Number(op_1[11]);
+    document.getElementById('g1_12').value = Number(op_1[12]);
     
-    document.getElementById('g1_4').value = op_1[5];
-    document.getElementById('g1_5').value = op_1[6];
-    document.getElementById('g1_6').value = op_1[7];
-    document.getElementById('g1_sred2').value = op_1[8];
-    document.getElementById('g1_7').value = op_1[9];
-    document.getElementById('g1_8').value = op_1[10];
-    document.getElementById('g1_9').value = op_1[11];
-    document.getElementById('g1_sred3').value = op_1[12];
-    document.getElementById('g1_10').value = op_1[13];
-    document.getElementById('g1_11').value = op_1[14];
-    document.getElementById('g1_12').value = op_1[15];
-    document.getElementById('g1_sred4').value = op_1[16];
+    document.getElementById('g2_massa').value = op_2[0];
+    document.getElementById('g2_1').value = Number(op_2[1]);
+    document.getElementById('g2_2').value = Number(op_2[2]);
+    document.getElementById('g2_3').value = Number(op_2[3]);
+    document.getElementById('g2_4').value = Number(op_2[4]);
+    document.getElementById('g2_5').value = Number(op_2[5]);
+    document.getElementById('g2_6').value = Number(op_2[6]);
+    document.getElementById('g2_7').value = Number(op_2[7]);
+    document.getElementById('g2_8').value = Number(op_2[8]);
+    document.getElementById('g2_9').value = Number(op_2[9]);
+    document.getElementById('g2_10').value = Number(op_2[10]);
+    document.getElementById('g2_11').value = Number(op_2[11]);
+    document.getElementById('g2_12').value = Number(op_2[12]);
 
-    
-    // let num1 = document.getElementById('g1_1').value;
-    // let num2 = document.getElementById('g1_2').value;
-    // let num3 = document.getElementById('g1_3').value;
-    // let sred1 = (num1+num2+num3)/3;
-    // document.getElementById('g1_sred1').value = sred1;              
+    document.getElementById('g3_massa').value = op_3[0];
+    document.getElementById('g3_1').value = Number(op_3[1]);
+    document.getElementById('g3_2').value = Number(op_3[2]);
+    document.getElementById('g3_3').value = Number(op_3[3]);
+    document.getElementById('g3_4').value = Number(op_3[4]);
+    document.getElementById('g3_5').value = Number(op_3[5]);
+    document.getElementById('g3_6').value = Number(op_3[6]);
+    document.getElementById('g3_7').value = Number(op_3[7]);
+    document.getElementById('g3_8').value = Number(op_3[8]);
+    document.getElementById('g3_9').value = Number(op_3[9]);
+    document.getElementById('g3_10').value = Number(op_3[10]);
+    document.getElementById('g3_11').value = Number(op_3[11]);
+    document.getElementById('g3_12').value = Number(op_3[12]);
+           
+}
+
+//------------ Событие по кнопки "Расчитать" ----------------------
+
+document.querySelector(".raschet_b1").onclick = raschet_b1;
+
+function raschet_b1(){
+    let g1_1 = Number(document.getElementById('g1_1').value);
+    let g1_2 = Number(document.getElementById('g1_2').value);
+    let g1_3 = Number(document.getElementById('g1_3').value);
+    let g1_sred1 = Number(g1_1 + g1_2 + g1_3) / 3;
+    document.getElementById('g1_sred1').value = g1_sred1.toFixed(1);
+    let g1_4 = Number(document.getElementById('g1_4').value);
+    let g1_5 = Number(document.getElementById('g1_5').value);
+    let g1_6 = Number(document.getElementById('g1_6').value);
+    let g1_sred2 = Number(g1_4 + g1_5 + g1_6) / 3;
+    document.getElementById('g1_sred2').value = g1_sred2.toFixed(1);
+    let g1_7 = Number(document.getElementById('g1_7').value);
+    let g1_8 = Number(document.getElementById('g1_8').value);
+    let g1_9 = Number(document.getElementById('g1_9').value);
+    let g1_sred3 = Number(g1_7 + g1_8 + g1_9) / 3;
+    document.getElementById('g1_sred3').value = g1_sred3.toFixed(1);
+    let g1_10 = Number(document.getElementById('g1_10').value);
+    let g1_11 = Number(document.getElementById('g1_11').value);
+    let g1_12 = Number(document.getElementById('g1_12').value);
+    let g1_sred4 = Number(g1_10 + g1_11 + g1_12) / 3;
+    document.getElementById('g1_sred4').value = g1_sred4.toFixed(1);
+
+    let g2_1 = Number(document.getElementById('g2_1').value);
+    let g2_2 = Number(document.getElementById('g2_2').value);
+    let g2_3 = Number(document.getElementById('g2_3').value);
+    let g2_sred1 = Number(g2_1 + g2_2 + g2_3) / 3;
+    document.getElementById('g2_sred1').value = g2_sred1.toFixed(1);
+    let g2_4 = Number(document.getElementById('g2_4').value);
+    let g2_5 = Number(document.getElementById('g2_5').value);
+    let g2_6 = Number(document.getElementById('g2_6').value);
+    let g2_sred2 = Number(g2_4 + g2_5 + g2_6) / 3;
+    document.getElementById('g2_sred2').value = g2_sred2.toFixed(1);
+    let g2_7 = Number(document.getElementById('g2_7').value);
+    let g2_8 = Number(document.getElementById('g2_8').value);
+    let g2_9 = Number(document.getElementById('g2_9').value);
+    let g2_sred3 = Number(g2_7 + g2_8 + g2_9) / 3;
+    document.getElementById('g2_sred3').value = g2_sred3.toFixed(1);
+    let g2_10 = Number(document.getElementById('g2_10').value);
+    let g2_11 = Number(document.getElementById('g2_11').value);
+    let g2_12 = Number(document.getElementById('g2_12').value);
+    let g2_sred4 = Number(g2_10 + g2_11 + g2_12) / 3;
+    document.getElementById('g2_sred4').value = g2_sred4.toFixed(1);
+
+    let g3_1 = Number(document.getElementById('g3_1').value);
+    let g3_2 = Number(document.getElementById('g3_2').value);
+    let g3_3 = Number(document.getElementById('g3_3').value);
+    let g3_sred1 = Number(g3_1 + g3_2 + g3_3) / 3;
+    document.getElementById('g3_sred1').value = g3_sred1.toFixed(1);
+    let g3_4 = Number(document.getElementById('g3_4').value);
+    let g3_5 = Number(document.getElementById('g3_5').value);
+    let g3_6 = Number(document.getElementById('g3_6').value);
+    let g3_sred2 = Number(g3_4 + g3_5 + g3_6) / 3;
+    document.getElementById('g3_sred2').value = g3_sred2.toFixed(1);
+    let g3_7 = Number(document.getElementById('g3_7').value);
+    let g3_8 = Number(document.getElementById('g3_8').value);
+    let g3_9 = Number(document.getElementById('g3_9').value);
+    let g3_sred3 = Number(g3_7 + g3_8 + g3_9) / 3;
+    document.getElementById('g3_sred3').value = g3_sred3.toFixed(1);
+    let g3_10 = Number(document.getElementById('g3_10').value);
+    let g3_11 = Number(document.getElementById('g3_11').value);
+    let g3_12 = Number(document.getElementById('g3_12').value);
+    let g3_sred4 = Number(g3_10 + g3_11 + g3_12) / 3;
+    document.getElementById('g3_sred4').value = g3_sred4.toFixed(1);
 
 }
 
+
+// ------------ Событие по кнопки "Очистить" ----------------------
 document.querySelector(".reset").onclick = reset;
 
 function reset(){
@@ -60,224 +151,58 @@ function reset(){
     document.querySelector('.z_2').value = '';
     document.querySelector('.z_3').value = '';
     document.querySelector('.z_4').value = '';
+
     document.getElementById('g1_massa').value = '';
     document.getElementById('g1_1').value = '';
     document.getElementById('g1_2').value = '';
     document.getElementById('g1_3').value = '';
     document.getElementById('g1_sred1').value = '';
-   
-    
+    document.getElementById('g1_4').value = '';
+    document.getElementById('g1_5').value = '';
+    document.getElementById('g1_6').value = '';
+    document.getElementById('g1_sred2').value = '';
+    document.getElementById('g1_7').value = '';
+    document.getElementById('g1_8').value = '';
+    document.getElementById('g1_9').value = '';
+    document.getElementById('g1_sred3').value = '';
+    document.getElementById('g1_10').value = '';
+    document.getElementById('g1_11').value = '';
+    document.getElementById('g1_12').value = '';
+    document.getElementById('g1_sred4').value = '';
+
+    document.getElementById('g2_massa').value = '';
+    document.getElementById('g2_1').value = '';
+    document.getElementById('g2_2').value = '';
+    document.getElementById('g2_3').value = '';
+    document.getElementById('g2_sred1').value = '';
+    document.getElementById('g2_4').value = '';
+    document.getElementById('g2_5').value = '';
+    document.getElementById('g2_6').value = '';
+    document.getElementById('g2_sred2').value = '';
+    document.getElementById('g2_7').value = '';
+    document.getElementById('g2_8').value = '';
+    document.getElementById('g2_9').value = '';
+    document.getElementById('g2_sred3').value = '';
+    document.getElementById('g2_10').value = '';
+    document.getElementById('g2_11').value = '';
+    document.getElementById('g2_12').value = '';
+    document.getElementById('g2_sred4').value = '';
+
+    document.getElementById('g3_massa').value = '';
+    document.getElementById('g3_1').value = '';
+    document.getElementById('g3_2').value = '';
+    document.getElementById('g3_3').value = '';
+    document.getElementById('g3_sred1').value = '';
+    document.getElementById('g3_4').value = '';
+    document.getElementById('g3_5').value = '';
+    document.getElementById('g3_6').value = '';
+    document.getElementById('g3_sred2').value = '';
+    document.getElementById('g3_7').value = '';
+    document.getElementById('g3_8').value = '';
+    document.getElementById('g3_9').value = '';
+    document.getElementById('g3_sred3').value = '';
+    document.getElementById('g3_10').value = '';
+    document.getElementById('g3_11').value = '';
+    document.getElementById('g3_12').value = '';
+    document.getElementById('g3_sred4').value = '';
 }
-//     // 1-й опыт
-//     document.querySelector('.a_1').value = op_1[0];
-//     // document.querySelector('.vsego_2').value = op_1[1];
-//     document.querySelector('.a_3').value = op_1[2];
-//     document.querySelector('.a_4').value = op_1[3];
-//     document.querySelector('.a_5').value = op_1[4];
-//     document.querySelector('.a_6').value = op_1[5];
-//     document.querySelector('.a_7').value = op_1[6];
-//     // document.querySelector('.vsego_8').value = op_1[7];
-//     document.querySelector('.a_9').value = op_1[8];
-
-//     // 2-й опыт
-//     document.querySelector('.b_1').value = op_2[0];
-//     document.querySelector('.b_3').value = op_2[2];
-//     document.querySelector('.b_4').value = op_2[3];
-//     document.querySelector('.b_5').value = op_2[4];
-//     document.querySelector('.b_6').value = op_2[5];
-//     document.querySelector('.b_7').value = op_2[6];
-//     document.querySelector('.b_9').value = op_2[8];
-    
-//     // 3-й Опыт
-//     document.querySelector('.c_1').value = op_3[0];
-//     document.querySelector('.c_3').value = op_3[2];
-//     document.querySelector('.c_4').value = op_3[3];
-//     document.querySelector('.c_5').value = op_3[4];
-//     document.querySelector('.c_6').value = op_3[5];
-//     document.querySelector('.c_7').value = op_3[6];
-//     document.querySelector('.c_9').value = op_3[8];
-
-//     // 4-й Опыт
-//     document.querySelector('.d_1').value = op_4[0];
-//     document.querySelector('.d_3').value = op_4[2];
-//     document.querySelector('.d_4').value = op_4[3];
-//     document.querySelector('.d_5').value = op_4[4];
-//     document.querySelector('.d_6').value = op_4[5];
-//     document.querySelector('.d_7').value = op_4[6];
-//     document.querySelector('.d_9').value = op_4[8];
-
-// }
-
-// document.querySelector(".raschet_b1").onclick = raschet;
-
-
-// function raschet(){
-//     let a1 = +document.querySelector('.a_3').value;
-//     let a2 = +document.querySelector('.a_4').value;
-//     let a3 = +document.querySelector('.a_5').value;
-//     let a4 = +document.querySelector('.a_6').value;
-//     let a5 = +document.querySelector('.a_7').value;
-
-//     let b1 = +document.querySelector('.b_3').value;
-//     let b2 = +document.querySelector('.b_4').value;
-//     let b3 = +document.querySelector('.b_5').value;
-//     let b4 = +document.querySelector('.b_6').value;
-//     let b5 = +document.querySelector('.b_7').value;
-
-//     let c1 = +document.querySelector('.c_3').value;
-//     let c2 = +document.querySelector('.c_4').value;
-//     let c3 = +document.querySelector('.c_5').value;
-//     let c4 = +document.querySelector('.c_6').value;
-//     let c5 = +document.querySelector('.c_7').value;
-
-//     let d1 = +document.querySelector('.d_3').value;
-//     let d2 = +document.querySelector('.d_4').value;
-//     let d3 = +document.querySelector('.d_5').value;
-//     let d4 = +document.querySelector('.d_6').value;
-//     let d5 = +document.querySelector('.d_7').value;
-
-
-//     // 1-й опыт
-//     let asum = a1 + a2 + a3 + a4 +a5;
-//     document.querySelector('.a_2').value = asum;
-
-//     let summa_rostkov_a = a1 + (a2*2) + (a3*3) + (a4*4) + (a5*5);
-//     document.querySelector('.a_8').value = summa_rostkov_a;
-
-//     // 2-й опыт
-//     let bsum = b1 + b2 + b3 + b4 +b5;
-//     document.querySelector('.b_2').value = bsum;
-
-//     let summa_rostkov_b = b1 + (b2*2) + (b3*3) + (b4*4) + (b5*5);
-//     document.querySelector('.b_8').value = summa_rostkov_b;
-
-//     // 3-й опыт
-//     let csum = c1 + c2 + c3 + c4 +c5;
-//     document.querySelector('.c_2').value = csum;
-
-//     let summa_rostkov_c = c1 + (c2*2) + (c3*3) + (c4*4) + (c5*5);
-//     document.querySelector('.c_8').value = summa_rostkov_c;
-
-//     // 4-й опыт
-//     let dsum = d1 + d2 + d3 + d4 +d5;
-//     document.querySelector('.d_2').value = dsum;
-
-//     let summa_rostkov_d = d1 + (d2*2) + (d3*3) + (d4*4) + (d5*5);
-//     document.querySelector('.d_8').value = summa_rostkov_d;
-
-//     // Расчёт для суммы на 9 колонок
-//     let sum_a_1 = +document.querySelector('.a_1').value;
-//     let sum_b_1 = +document.querySelector('.b_1').value;
-//     let sum_c_1 = +document.querySelector('.c_1').value;
-//     let sum_d_1 = +document.querySelector('.d_1').value;
-//     let summa1 = sum_a_1 + sum_b_1 + sum_c_1 + sum_d_1;
-//     let summa2 = asum + bsum + csum + dsum;
-    
-//     document.querySelector('.summa_1').value = summa1; // 1-я колонка
-//     document.querySelector('.summa_2').value = summa2; // 2-я колонка
-
-//     let sum_a_3 = +document.querySelector('.a_3').value;
-//     let sum_b_3 = +document.querySelector('.b_3').value;
-//     let sum_c_3 = +document.querySelector('.c_3').value;
-//     let sum_d_3 = +document.querySelector('.d_3').value;
-//     let summa3 = sum_a_3 + sum_b_3 + sum_c_3 + sum_d_3;
-
-//     document.querySelector('.summa_3').value = summa3; // 3-я колонка
-
-//     let sum_a_4 = +document.querySelector('.a_4').value;
-//     let sum_b_4 = +document.querySelector('.b_4').value;
-//     let sum_c_4 = +document.querySelector('.c_4').value;
-//     let sum_d_4 = +document.querySelector('.d_4').value;
-//     let summa4 = sum_a_4 + sum_b_4 + sum_c_4 + sum_d_4;
-
-//     document.querySelector('.summa_4').value = summa4; // 4-я колонка
-
-//     let sum_a_5 = +document.querySelector('.a_5').value;
-//     let sum_b_5 = +document.querySelector('.b_5').value;
-//     let sum_c_5 = +document.querySelector('.c_5').value;
-//     let sum_d_5 = +document.querySelector('.d_5').value;
-//     let summa5 = sum_a_5 + sum_b_5 + sum_c_5 + sum_d_5;
-
-//     document.querySelector('.summa_5').value = summa5; // 5-я колонка
-
-//     let sum_a_6 = +document.querySelector('.a_6').value;
-//     let sum_b_6 = +document.querySelector('.b_6').value;
-//     let sum_c_6 = +document.querySelector('.c_6').value;
-//     let sum_d_6 = +document.querySelector('.d_6').value;
-//     let summa6 = sum_a_6 + sum_b_6 + sum_c_6 + sum_d_6;
-
-//     document.querySelector('.summa_6').value = summa6; // 6-я колонка
-
-//     let sum_a_7 = +document.querySelector('.a_7').value;
-//     let sum_b_7 = +document.querySelector('.b_7').value;
-//     let sum_c_7 = +document.querySelector('.c_7').value;
-//     let sum_d_7 = +document.querySelector('.d_7').value;
-//     let summa7 = sum_a_7 + sum_b_7 + sum_c_7 + sum_d_7;
-
-//     document.querySelector('.summa_7').value = summa7; // 7-я колонка
-
-//     let summa8 = summa_rostkov_a + summa_rostkov_b + summa_rostkov_c + summa_rostkov_d;
-//     document.querySelector('.summa_8').value = summa8; // 8-я колонка
-                        
-//     let sum_a_9 = +document.querySelector('.a_9').value;
-//     let sum_b_9 = +document.querySelector('.b_9').value;
-//     let sum_c_9 = +document.querySelector('.c_9').value;
-//     let sum_d_9 = +document.querySelector('.d_9').value;
-//     let summa9 = sum_a_9 + sum_b_9 + sum_c_9 + sum_d_9;
-
-//     document.querySelector('.summa_9').value = summa9; // 9-я колонка
-
-//     let srednee1 = (sum_a_1+sum_b_1+sum_c_1+sum_d_1)/4
-//     document.querySelector('.sred_znach_1').value = srednee1.toFixed(); // 1-е среднее значение
-
-//     let srednee2 = (asum + bsum + csum + dsum)/4
-//     document.querySelector('.sred_znach_2').value = srednee2.toFixed(); // 2-е среднее значение
-
-//     let srednee3 = (sum_a_3 + sum_b_3 + sum_c_3 + sum_d_3)/4;
-//     document.querySelector('.sred_znach_3').value = srednee3.toFixed(); // 3-е среднее значение
-
-//     let srednee4 = (sum_a_4 + sum_b_4 + sum_c_4 + sum_d_4)/4;
-//     document.querySelector('.sred_znach_4').value = srednee4.toFixed(); // 4-е среднее значение
-
-//     let srednee5 = (sum_a_5 + sum_b_5 + sum_c_5 + sum_d_5)/4;
-//     document.querySelector('.sred_znach_5').value = srednee5.toFixed(); // 5-е среднее значение
-
-//     let srednee6 = (sum_a_6 + sum_b_6 + sum_c_6 + sum_d_6)/4;
-//     document.querySelector('.sred_znach_6').value = srednee6.toFixed(); // 6-е среднее значение
-
-//     let srednee7 = (sum_a_7 + sum_b_7 + sum_c_7 + sum_d_7)/4;
-//     document.querySelector('.sred_znach_7').value = srednee7.toFixed(); // 7-е среднее значение
-
-//     let srednee8 = (summa_rostkov_a + summa_rostkov_b + summa_rostkov_c + summa_rostkov_d)/4
-//     document.querySelector('.sred_znach_8').value = srednee8.toFixed(); // 8-е среднее значение
-
-//     let srednee9 = (sum_a_9 + sum_b_9 + sum_c_9 + sum_d_9)/4;
-//     document.querySelector('.sred_znach_9').value = srednee9.toFixed(); // 9-е среднее значение
-
-
-//     let rostkovost1 = (srednee2 * 100)/srednee8;
-//     document.querySelector('.rost_2').value = rostkovost1.toFixed(1); // Ростковость % 2-е значение
-
-//     let rostkovost2 = (srednee3 * 100)/srednee8;
-//     document.querySelector('.rost_3').value = rostkovost2.toFixed(1); // Ростковость % 3-е значение
-
-//     let rostkovost3 = (srednee4 * 100)/srednee8;
-//     document.querySelector('.rost_4').value = rostkovost3.toFixed(1); // Ростковость % 4-е значение
-
-//     let rostkovost4 = (srednee5 * 100)/srednee8;
-//     document.querySelector('.rost_5').value = rostkovost4.toFixed(1); // Ростковость % 5-е значение
-
-//     let rostkovost5 = (srednee6 * 100)/srednee8;
-//     document.querySelector('.rost_6').value = rostkovost5.toFixed(1); // Ростковость % 6-е значение
-
-//     let rostkovost6 = (srednee7 * 100)/srednee8;
-//     document.querySelector('.rost_7').value = rostkovost6.toFixed(1); // Ростковость % 7-е значение
-
-//     document.querySelector('.rost_8').value = '-'; // Ростковость % без значения
-//     document.querySelector('.rost_9').value = '-'; // Ростковость % без значения
-
-
-//     let bez_semyan = (srednee9 * 100) / srednee1;
-//     document.querySelector('.dolya_9').value = bez_semyan.toFixed(1); // Доля драже без семян
-
-// }
