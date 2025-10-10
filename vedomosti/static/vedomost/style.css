@@ -107,10 +107,10 @@ input{
 }
 
 .in{
-    width: 50px;
+    width: 54px;
     margin: 0 auto;
 }
-.in_sred{
+.in_sred, .summ, .sred{
     /* border: none; */
     width: 50px;
     margin: 0 auto;
@@ -242,4 +242,8 @@ input{
     padding: 2px;
     border: 1px solid black;
     border-radius: 7px;
+}
+
+.text_left{
+    text-align: left;
 }

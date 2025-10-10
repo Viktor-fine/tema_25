@@ -1,0 +1,194 @@
+{% extends "../base.html" %}
+
+
+{% block title %}Форма Б.7{% endblock %}
+
+{% block title_form %}
+    <button type="button" class="primer1_b1" name="primer">Пример</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+    <!-- <button type="button" class="save" name="save">Сохранить Форму</button><br><br> -->
+    <p class="name_vedomost"><b>Форма Б.7</b> - Ведомость измерения температуры вороха зерна</p>
+{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor"><i><b>Марка машины:</b></i></label></td>
+        <td><input type="text" id="marka" class="z_1" name="marka" size="50"></td>
+    </tr>
+    <tr>
+        <td><label for="marka" class="mod_traktor"><i><b>Место испытания:</b></i></label></td>
+        <td><input type="text" id="opyt" class="z_1" name="marka" size="50"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor"><i><b>Опыт:</b></i></label></td>
+        <td><input type="text" id="mesto" class="z_2" name="mesto" size="5"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor"><i><b>Культура, сорт:</b></i></label></td>
+        <td><input type="text" id="tara" class="z_2" name="mesto" size="50"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Дата испытаний:</b></i></label></td>
+        <td><input type="text" id="data" class="z_3" name="data" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Средства измерений:</b></i></label></td>
+        <td><input type="text" id="sort" class="z_4" name="data" size="50"></td>
+    </tr>
+         
+</table>
+{% endblock %}
+
+{% block tabl %}
+<table class="main-tabl">
+    <thead>
+        <tr>
+            <th class="tabl-th" rowspan="3">Время из-<br>мерения<br>темпера-<br>туры, ч</th>
+            <th class="tabl-th" rowspan="3">Точка из-<br>мерения<br>темпера-<br>туры</th>
+            <th class="tabl-th" colspan="3">Температура<br>до перелопачивания, &deg;C</th>
+            <th class="tabl-th" colspan="3">Температура<br>после перелопачивания, &deg;C</th>
+            
+        </tr>
+        <tr>
+            <th class="tabl-th" colspan="6">Слой зерна</th>
+        </tr>
+        <tr>
+            <th class="tabl-th">Верхний</th>
+            <th class="tabl-th">Средний </th>
+            <th class="tabl-th">Нижний</th>
+            <th class="tabl-th">Верхний</th>
+            <th class="tabl-th">Средний </th>
+            <th class="tabl-th">Нижний</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">1</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">2</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">3</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">4</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">5</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">6</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">7</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">8</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <th class="tabl-th">9</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td class="tabl-td" rowspan="2"></td>
+            <th class="tabl-th">Сумма</th>
+            <td class="tabl-td"><input class="summ" id="summ1" type="text"></td>
+            <td class="tabl-td"><input class="summ" id="summ2" type="text"></td>
+            <td class="tabl-td"><input class="summ" id="summ3" type="text"></td>
+            <td class="tabl-td"><input class="summ" id="summ4" type="text"></td>
+            <td class="tabl-td"><input class="summ" id="summ5" type="text"></td>
+            <td class="tabl-td"><input class="summ" id="summ6" type="text"></td>
+        </tr>
+         <tr>
+            <th class="tabl-th">Средне-<br>арифмитиче-<br>ческое значение</th>
+            <td class="tabl-td"><input class="sred" id="sred1" type="text"></td>
+            <td class="tabl-td"><input class="sred" id="sred2" type="text"></td>
+            <td class="tabl-td"><input class="sred" id="sred3" type="text"></td>
+            <td class="tabl-td"><input class="sred" id="sred4" type="text"></td>
+            <td class="tabl-td"><input class="sred" id="sred5" type="text"></td>
+            <td class="tabl-td"><input class="summ" id="sred6" type="text"></td>
+        </tr>
+    </tfoot>
+
+
+
+</table>
+<br>
+<div class="butt">
+    <button type="button" class="raschet_b1">Расчёт</button>
+    <!-- <button type="button" class="bd_b1">Сохранить в БД</button> -->
+    <!-- <button type="button" class="print1_b1">Печать</button> -->
+</div>
+<!-- {% load static %} -->
+<!-- <script src="{% static 'js\b_1.js' %}"></script> -->
+<!-- <script src="../../static/js/b_1.js"></script> -->
+{% endblock %}

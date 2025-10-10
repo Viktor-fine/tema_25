@@ -1,0 +1,99 @@
+{% extends "../base.html" %}
+
+
+{% block title %}Форма Б.6{% endblock %}
+
+{% block title_form %}
+    <button type="button" class="primer1_b1" name="primer">Пример</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+    <!-- <button type="button" class="save" name="save">Сохранить Форму</button><br><br> -->
+    <p class="name_vedomost"><b>Форма Б.6</b> - Ведомость определения дробления, обрушивания, засоренности зерна</p>
+{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor"><i><b>Марка машины:</b></i></label></td>
+        <td><input type="text" id="marka" class="z_1" name="marka" size="50"></td>
+    </tr>
+    <tr>
+        <td><label for="marka" class="mod_traktor"><i><b>Опыт:</b></i></label></td>
+        <td><input type="text" id="opyt" class="z_1" name="opyt" size="5"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor"><i><b>Место испытаний:</b></i></label></td>
+        <td><input type="text" id="mesto" class="z_2" name="mesto" size="15"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor"><i><b>Культура, сорт:</b></i></label></td>
+        <td><input type="text" id="kultura" class="z_2" name="kultura" size="50"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Дата испытаний:</b></i></label></td>
+        <td><input type="text" id="data" class="z_3" name="data" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Вид груза:</b></i></label></td>
+        <td><input type="text" id="data" class="z_3" name="data" size="15"></td>
+    </tr>
+     <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Масса навески:</b></i></label></td>
+        <td><input type="text" id="massa" class="z_3" name="massa" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Средства измерений:</b></i></label></td>
+        <td><input type="text" id="sort" class="z_4" name="data" size="50"></td>
+    </tr>
+         
+</table>
+{% endblock %}
+
+{% block tabl %}
+<table class="main-tabl">
+    <thead>
+         <tr>
+            <th class="tabl-th">Фракция, г(%)</th>
+            <th class="tabl-th">1-я навеска</th>
+            <th class="tabl-th">2-я навеска</th>
+            <th class="tabl-th">Среднеарифметиче-<br>ское значение</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th class="tabl-th">Целое зерно</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Дроблёное зерно</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Обрушенное зерно<br>(для плёнчатых культур)</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Сорная примесь</th>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+            <td class="tabl-td"><input class="in" type="number" size="5"></td>
+        </tr>
+    </tbody>
+
+</table>
+<br>
+<div class="butt">
+    <button type="button" class="raschet_b1">Расчёт</button>
+    <!-- <button type="button" class="bd_b1">Сохранить в БД</button> -->
+    <!-- <button type="button" class="print1_b1">Печать</button> -->
+</div>
+<!-- {% load static %} -->
+<!-- <script src="{% static 'js\b_1.js' %}"></script> -->
+<!-- <script src="../../static/js/b_1.js"></script> -->
+{% endblock %}
