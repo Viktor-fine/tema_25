@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
 def b1 (request):
-    return render (request, 'form_b/b_1.html')
+    val = ['Хай', 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+    return render (request, 'form_b/b_1.html', context={'znak': val})
 
 def b2(request):
     return render (request, 'form_b/b_2.html')

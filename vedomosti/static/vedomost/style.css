@@ -107,7 +107,7 @@ input{
 }
 
 .in{
-    width: 54px;
+    width: 51px;
     margin: 0 auto;
 }
 .in_sred, .summ, .sred{
@@ -246,4 +246,10 @@ input{
 
 .text_left{
     text-align: left;
+}
+
+.container_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
