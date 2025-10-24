@@ -1,0 +1,106 @@
+{% extends "../base.html" %}
+
+
+{% block title %}Форма А.2{% endblock %}
+
+{% block title_form %}
+    <button type="button" class="primer1_b1" name="primer">Пример</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+    <!-- <button type="button" class="save" name="save">Сохранить Форму</button><br><br> -->
+    <p class="name_vedomost"><b>Форма А.2</b> - Сводная ведомость основных показателей испытания гидросистемы</p>
+{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor"><i><b>Марка машины:</b></i></label></td>
+        <td><input type="text" id="marka" class="z_1" name="marka" size="50"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor"><i><b>Дата испытаний:</b></i></label></td>
+        <td><input type="text" id="data" class="z_3" name="data" size="15"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor"><i><b>Место испытаний:</b></i></label></td>
+        <td><input type="text" id="mesto" class="z_2" name="mesto" size="15"></td>
+    </tr>
+</table>
+{% endblock %}
+
+{% block tabl %}
+<table class="main-tabl">
+    <thead>
+        <tr>
+            <th class="tabl-th" rowspan="2">Наименование показателей</th>
+            <th class="tabl-th" colspan="2">Значение показателя</th>
+            <th class="tabl-th" rowspan="2">Снижение<br>показателя, %</th>
+        </tr>
+        <tr>
+            <th class="tabl-th">Вначале<br>испытаний</th>
+            <th class="tabl-th">через ... <br> часов работы</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="tabl-th">Максимальная грузоподъёмность, кг</th>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Номинальная грузоподъёмность, кг</th>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Время подъёма при номинальной<br> нагрузке, с</th>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Максимальная мощность<br>гидросистемы, кВт</th>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Условия коэффициент<br>объёмных потерь</th>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">коэффициент усадки</th>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th" rowspan="3">Отрывное усилие:<br>- На опорной поверхности<br>- На максимальной глубине</th>
+        </tr>
+        <tr>
+            
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+        <tr>
+            
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+            <td class="tabl-td"><input class="in" type="number" size="3"></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<div class="butt">
+    <button type="button" class="raschet_b1">Расчёт</button>
+    <!-- <button type="button" class="bd_b1">Сохранить в БД</button> -->
+    <!-- <button type="button" class="print1_b1">Печать</button> -->
+</div>
+<!-- {% load static %} -->
+<!-- <script src="{% static 'js\b_1.js' %}"></script> -->
+<!-- <script src="../../static/js/b_1.js"></script> -->
+{% endblock %}
