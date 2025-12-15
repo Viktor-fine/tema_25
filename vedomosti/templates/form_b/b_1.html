@@ -265,6 +265,7 @@
 <br>
 <div class="butt">
     <button type="button" class="raschet_b1">Расчёт</button>
+    <button type="button" class="graf" onclick="graff()">Построить графики</button>
     <!-- <button type="button" class="bd_b1">Сохранить в БД</button> -->
     <!-- <button type="button" class="print1_b1">Печать</button> -->
 </div>
@@ -296,6 +297,8 @@
 <script>
     let num = '{{ znak.0|escapejs }}'; 
 
+    function graff(){
+        let g1 = document.getElementById('g1_massa').value;
  
     const ctx = document.getElementById('myChart_1');
     
@@ -303,7 +306,7 @@
     new Chart(ctx, {
         type: 'line',
         data: {
-            labels: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
+            labels: [g1, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
             datasets: [{
                 label: 'Давление масла в гидросистеме, МПа',
                 // data: [0, 5, 12, 17, 20, 25, 29, 32, 35, 37],
@@ -319,6 +322,7 @@
             }
         }
     })
+
 
     const ctx2 = document.getElementById('myChart_2');
 
@@ -385,6 +389,7 @@
             }
         }
     })
+}
 </script>
 
 
