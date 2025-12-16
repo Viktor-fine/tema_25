@@ -273,6 +273,7 @@
 <script src="{% static 'js\b_1.js' %}"></script>
 <script src="../../static/js/b_1.js"></script>
 
+<div class="graf_main" id="graf_block">
 <div class="container_grid">
     <div style="height: 360px; width: 500px;">
         <canvas id="myChart_1"></canvas>
@@ -290,7 +291,7 @@
         <canvas id="myChart_4"></canvas>
     </div>
 </div>
-
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -298,7 +299,32 @@
     let num = '{{ znak.0|escapejs }}'; 
 
     function graff(){
+
+        document.getElementById('graf_block').style.display='block';
+
         let g1 = document.getElementById('g1_massa').value;
+        let g2 = document.getElementById('g2_massa').value;
+        let g3 = document.getElementById('g3_massa').value;
+        let g4 = document.getElementById('g4_massa').value;
+        let g5 = document.getElementById('g5_massa').value;
+        let g6 = document.getElementById('g6_massa').value;
+        let g7 = document.getElementById('g7_massa').value;
+        let g8 = document.getElementById('g8_massa').value;
+        let g9 = document.getElementById('g9_massa').value;
+        let g10 = document.getElementById('g10_massa').value;
+
+        let m1 = document.getElementById('g1_sred1').value;
+        let m2 = document.getElementById('g2_sred1').value;
+        let m3 = document.getElementById('g3_sred1').value;
+        let m4 = document.getElementById('g4_sred1').value;
+        let m5 = document.getElementById('g5_sred1').value;
+        let m6 = document.getElementById('g6_sred1').value;
+        let m7 = document.getElementById('g7_sred1').value;
+        let m8 = document.getElementById('g8_sred1').value;
+        let m9 = document.getElementById('g9_sred1').value;
+        let m10 = document.getElementById('g10_sred1').value;
+
+
  
     const ctx = document.getElementById('myChart_1');
     
@@ -306,11 +332,11 @@
     new Chart(ctx, {
         type: 'line',
         data: {
-            labels: [g1, 200, 300, 400, 500, 600, 700, 800, 900, 1000],
+            labels: [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10],
             datasets: [{
                 label: 'Давление масла в гидросистеме, МПа',
                 // data: [0, 5, 12, 17, 20, 25, 29, 32, 35, 37],
-                data: [14, 14.7, 15, 15.3, 16.3, 17, 17.3, 18, 18.3, 18.5],
+                data: [m1, m2, m3, m4, m5, m6, m7, m8, m9, m10],
                 borderWidth: 1
             }]
         },

@@ -253,3 +253,7 @@ input{
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
+
+.graf_main{
+    display: none;
+}
