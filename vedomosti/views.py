@@ -3,6 +3,11 @@ from django.shortcuts import render
 def a2(request):
     return render(request, 'form_a/a_2.html')
 
+def a3(request):
+    return render(request, 'form_a/a_3.html')
+
+
+
 def b1(request):
     return render (request, 'form_b/b_1.html')
 

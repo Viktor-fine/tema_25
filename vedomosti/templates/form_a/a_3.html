@@ -1,0 +1,217 @@
+{% extends "../base.html" %}
+
+
+{% block title %}Форма А.3{% endblock %}
+
+{% block title_form %}
+    <button type="button" class="primer1_b1" name="primer">Пример</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+    <!-- <button type="button" class="save" name="save">Сохранить Форму</button><br><br> -->
+    <p class="name_vedomost"><b>Форма А.3</b> - Показатели условий проведения испытаний при агротехнической и эксплуатационно-технологической оценках</p>
+{% endblock  %}
+
+{% block tabl %}
+<table class="main-tabl">
+    <thead>
+        <tr>
+            <th class="tabl-th" rowspan="3">Наименование<br> показателя</th>
+            <th class="tabl-th" colspan="12">Значение показателя</th>
+        </tr>
+        <tr>
+            <th class="tabl-th" colspan="12">Тип погрузчика, транспортёра</th>
+        </tr>
+        <tr>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">зерна</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">початков кукурузы</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">корнеплодов сахарной,<br>кормовой свеклы</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">клубней картофеля</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">овощных и бахчевых<br>культур</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">плодовых культур</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">силоса и грубых<br>кормов</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">минеральных удобрений</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">органических удобрений</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">чайного листа</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">затаренных и штучных<br>грузов</th>
+            <th class="tabl-th" style="writing-mode: vertical-rl; transform: rotate(180deg)">сыпучих материалов<br>(песок, глина, гравий)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="tabl-th">Влажностьпочвы в слое<br> от 0 до 10см*, %</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Твёрдость почвы в слое<br> от 0 до 10см*, МПа</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Уклон поверхности площадки<br>в продольном и поперечном<br> направлении*, ... &deg;</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Температура воздуха, &deg;С </th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Относительная влажность<br>воздуха, % </th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Скорость ветра**, м/с </th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Тип хранилища</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th style="text-align:left; padding-left: 10px;">Габариты хранилища,<br>железнодорожного вагона,<br>
+            бурта, силосной ямы,<br> скирды, валка, см:</th>
+            <td class="tabl-td" colspan="12"></td>
+           
+        </tr>
+        <tr>
+            <th>- длина</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th>- ширина</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th>- высота</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+        <tr>
+            <th class="tabl-th">Выровненность погрузочной<br>площадки</th>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+            <td class="tabl-td"><input class="in" type="number"></td>
+        </tr>
+      
+        
+      
+        
+    <tbody>
+
+</table>
+{% endblock %}
